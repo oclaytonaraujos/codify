@@ -4,7 +4,7 @@ import styles from './Services.module.css'
 
 export function Services() {
   return (
-    <section className={styles.services} id="servicos">
+    <section className={styles.services} id="servicos" aria-label="Serviços">
       <AnimateOnScroll>
         <p className="section-label">O QUE FAZEMOS</p>
         <h2 className="section-title">

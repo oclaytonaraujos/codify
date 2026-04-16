@@ -6,7 +6,7 @@ export function Hero() {
   }
 
   return (
-    <section className={styles.hero} id="sobre">
+    <section className={styles.hero} id="sobre" aria-label="Apresentação">
       <div className={styles.gridBg} aria-hidden="true" />
 
       <div className={styles.content}>

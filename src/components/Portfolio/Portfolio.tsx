@@ -4,7 +4,7 @@ import styles from './Portfolio.module.css'
 
 export function Portfolio() {
   return (
-    <section className={styles.portfolio} id="portfolio">
+    <section className={styles.portfolio} id="portfolio" aria-label="Portfólio">
       <AnimateOnScroll>
         <p className="section-label">PORTFÓLIO</p>
         <h2 className="section-title">

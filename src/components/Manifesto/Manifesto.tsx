@@ -3,7 +3,7 @@ import styles from './Manifesto.module.css'
 
 export function Manifesto() {
   return (
-    <section className={styles.manifesto} id="manifesto">
+    <section className={styles.manifesto} id="manifesto" aria-label="Manifesto">
       <div className={styles.inner}>
         <AnimateOnScroll>
           <p className="section-label section-label--light">MANIFESTO</p>
