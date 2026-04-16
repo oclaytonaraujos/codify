@@ -1,5 +1,5 @@
 import { AnimateOnScroll } from '../AnimateOnScroll/AnimateOnScroll'
-import { IconEmail, IconPhone, IconLocation } from './ContactIcons'
+import { IconEmail, IconPhone, IconLocation, IconInstagram } from './ContactIcons'
 import styles from './Contact.module.css'
 
 const CARDS = [
@@ -25,6 +25,12 @@ const CARDS = [
       </>
     ),
     href: undefined,
+  },
+  {
+    icon:  <IconInstagram />,
+    label: 'Instagram',
+    value: '@codify.dev.br',
+    href:  'https://instagram.com/codify.dev.br',
   },
 ] as const
 
