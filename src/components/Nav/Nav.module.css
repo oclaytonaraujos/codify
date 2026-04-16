@@ -1,0 +1,144 @@
+.nav {
+  position:      fixed;
+  top:    0;
+  left:   0;
+  right:  0;
+  z-index: 100;
+  border-bottom: 1px solid transparent;
+  transition:    background 0.3s, border-color 0.3s;
+}
+
+.scrolled {
+  background:          #0a0a0af2;
+  backdrop-filter:     blur(12px);
+  border-bottom-color: var(--border);
+}
+
+.inner {
+  display:     flex;
+  align-items: center;
+  gap:         40px;
+  max-width:   1200px;
+  margin:      0 auto;
+  padding:     20px 32px;
+}
+
+/* Logo */
+.logo {
+  flex-shrink: 0;
+  display:     flex;
+  align-items: center;
+  gap:         6px;
+}
+
+.logoWord {
+  font-family:    'Bebas Neue', sans-serif;
+  font-size:      26px;
+  letter-spacing: 0.1em;
+  color:          var(--white);
+}
+
+.logoDot {
+  width:         6px;
+  height:        6px;
+  border-radius: 50%;
+  background:    var(--accent);
+  margin-bottom: 2px;
+}
+
+/* Links desktop */
+.linksDesktop {
+  display:     flex;
+  align-items: center;
+  gap:         32px;
+  margin-left: auto;
+}
+
+.link {
+  font-size:      14px;
+  font-weight:    400;
+  letter-spacing: 0.05em;
+  color:          var(--text-muted);
+  transition:     color 0.2s;
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.cta {
+  padding:        9px 18px;
+  font-size:      13px;
+  font-weight:    500;
+  letter-spacing: 0.03em;
+  color:          var(--bg);
+  background:     var(--accent);
+  transition:     background 0.2s;
+}
+
+.cta:hover {
+  background: var(--accent2);
+}
+
+/* Hamburger */
+.hamburger {
+  display:        none;
+  flex-direction: column;
+  gap:            5px;
+  margin-left:    auto;
+  padding:        4px;
+}
+
+.hamburger span {
+  display:    block;
+  width:      22px;
+  height:     2px;
+  background: var(--text);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.hamburger.open span:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Menu mobile */
+.mobileMenu {
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+  padding:        16px 32px 24px;
+  background:     var(--surface);
+  border-top:     1px solid var(--border);
+}
+
+.mobileLink {
+  font-size:  18px;
+  color:      var(--text);
+  text-align: left;
+  padding:    4px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .linksDesktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding: 16px 20px;
+  }
+
+  .mobileMenu {
+    padding: 16px 20px 24px;
+  }
+}

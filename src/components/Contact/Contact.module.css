@@ -1,0 +1,91 @@
+.contact {
+  max-width: 1200px;
+  margin:    0 auto;
+  padding:   120px 32px;
+}
+
+.inner {
+  width: 100%;
+}
+
+.title {
+  margin:         16px 0;
+  font-family:    'Bebas Neue', sans-serif;
+  font-size:      clamp(48px, 7vw, 96px);
+  letter-spacing: 0.02em;
+  line-height:    1;
+}
+
+.sub {
+  margin-bottom: 64px;
+  font-size:     16px;
+  font-weight:   300;
+  color:         var(--text-muted);
+}
+
+/* Grid: borda via gap + background no container */
+.grid {
+  display:               grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:                   1px;
+  background:            var(--border);
+  border:                1px solid var(--border);
+}
+
+.card {
+  display:        flex;
+  flex-direction: column;
+  gap:            8px;
+  padding:        40px 32px;
+  background:     var(--bg);
+  transition:     background 0.2s;
+}
+
+.card:hover {
+  background: var(--surface);
+}
+
+.icon {
+  display:       block;
+  margin-bottom: 8px;
+  color:         var(--accent);
+}
+
+.label {
+  font-family:    'DM Mono', monospace;
+  font-size:      10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--text-muted);
+}
+
+.value {
+  font-size:   14px;
+  line-height: 1.6;
+  color:       var(--text);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contact {
+    padding-top:    80px;
+    padding-bottom: 80px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding-top:    64px;
+    padding-bottom: 64px;
+    padding-left:   20px;
+    padding-right:  20px;
+  }
+}

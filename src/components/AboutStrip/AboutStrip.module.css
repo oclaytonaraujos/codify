@@ -1,0 +1,44 @@
+.strip {
+  overflow:   hidden;
+  padding:    20px 0;
+  background: var(--accent);
+}
+
+.track {
+  display:     flex;
+  align-items: center;
+  white-space: nowrap;
+  animation:   marquee 28s linear infinite;
+}
+
+.item {
+  display:        inline-flex;
+  align-items:    center;
+  gap:            20px;
+  padding-right:  0;
+  font-family:    'DM Mono', monospace;
+  font-size:      11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:          var(--bg);
+}
+
+@media (max-width: 480px) {
+  .strip {
+    padding: 14px 0;
+  }
+
+  .track {
+    animation-duration: 18s;
+  }
+
+  .item {
+    gap:            14px;
+    font-size:      10px;
+    letter-spacing: 0.08em;
+  }
+}
+
+.sep {
+  opacity: 0.4;
+}

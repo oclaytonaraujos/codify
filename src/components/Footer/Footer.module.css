@@ -1,0 +1,47 @@
+.footer {
+  padding:    32px;
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  display:     flex;
+  flex-wrap:   wrap;
+  align-items: center;
+  gap:         24px;
+  max-width:   1200px;
+  margin:      0 auto;
+}
+
+.logo {
+  font-family:    'Bebas Neue', sans-serif;
+  font-size:      20px;
+  letter-spacing: 0.1em;
+  color:          var(--white);
+}
+
+.copy {
+  font-family:    'DM Mono', monospace;
+  font-size:      11px;
+  letter-spacing: 0.06em;
+  color:          var(--text-muted);
+}
+
+.tag {
+  margin-left: auto;
+  font-size:   13px;
+  font-style:  italic;
+  font-weight: 300;
+  color:       var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    align-items:    flex-start;
+    gap:            8px;
+  }
+
+  .tag {
+    margin-left: 0;
+  }
+}
