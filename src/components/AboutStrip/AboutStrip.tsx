@@ -10,7 +10,7 @@ const ITEMS = [
 
 export function AboutStrip() {
   // Duplicamos os itens para criar o loop contínuo do marquee
-  const track = [...ITEMS, ...ITEMS]
+  const track = [...ITEMS, ...ITEMS, ...ITEMS]
 
   return (
     <div className={styles.strip} aria-label="Informações da empresa">

@@ -4,16 +4,22 @@ import styles from './Contact.module.css'
 
 const CARDS = [
   {
-    icon:  <IconEmail />,
-    label: 'Email',
-    value: 'contato@codify.dev.br',
-    href:  'mailto:contato@codify.dev.br',
+    icon:  <IconInstagram />,
+    label: 'Instagram',
+    value: '@codify.dev.br',
+    href:  'https://instagram.com/codify.dev.br',
   },
   {
     icon:  <IconPhone />,
     label: 'Telefone',
     value: '(64) 9989-0403',
-    href:  'tel:+556499890403',
+    href:  'https://wa.me/556499890403',
+  },
+  {
+    icon:  <IconEmail />,
+    label: 'Email',
+    value: 'contato@codify.dev.br',
+    href:  'mailto:contato@codify.dev.br',
   },
   {
     icon:  <IconLocation />,
@@ -25,12 +31,6 @@ const CARDS = [
       </>
     ),
     href: undefined,
-  },
-  {
-    icon:  <IconInstagram />,
-    label: 'Instagram',
-    value: '@codify.dev.br',
-    href:  'https://instagram.com/codify.dev.br',
   },
 ] as const
 

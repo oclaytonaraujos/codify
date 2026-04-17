@@ -1,0 +1,56 @@
+.strip {
+  overflow:   hidden;
+  padding:    18px 0;
+  background: var(--surface);
+  border-top:    1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.track {
+  display:     flex;
+  align-items: center;
+  white-space: nowrap;
+  animation:   techMarquee 40s linear infinite;
+  will-change: transform;
+}
+
+.item {
+  display:        inline-flex;
+  align-items:    center;
+  font-family:    'DM Mono', monospace;
+  font-size:      11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--accent);
+  transition:     color 0.2s;
+}
+
+.item:hover {
+  color: var(--text);
+}
+
+.dot {
+  opacity: 0.25;
+  margin:  0 16px;
+}
+
+@keyframes techMarquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+
+@media (max-width: 480px) {
+  .strip {
+    padding: 13px 0;
+  }
+
+  .track {
+    animation-duration: 26s;
+  }
+
+  .item {
+    gap:            12px;
+    font-size:      10px;
+    letter-spacing: 0.09em;
+  }
+}
