@@ -36,7 +36,9 @@ const CARDS = [
 
 export function Contact() {
   return (
-    <section className={styles.contact} id="contato" aria-label="Contato">
+    <section className={styles.contactWrap} id="contato" aria-label="Contato">
+      <div className={styles.bg} aria-hidden="true" />
+    <div className={styles.contact}>
       <AnimateOnScroll className={styles.inner}>
         <p className="section-label">CONTATO</p>
         <h2 className={styles.title}>
@@ -66,6 +68,7 @@ export function Contact() {
           })}
         </div>
       </AnimateOnScroll>
+    </div>
     </section>
   )
 }

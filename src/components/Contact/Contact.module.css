@@ -1,4 +1,18 @@
+.contactWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  position:   absolute;
+  inset:      0;
+  background: radial-gradient(ellipse 70% 60% at 50% 100%, #c8f54210 0%, transparent 70%);
+  pointer-events: none;
+}
+
 .contact {
+  position:  relative;
+  z-index:   1;
   max-width: 1200px;
   margin:    0 auto;
   padding:   120px 32px;
