@@ -34,6 +34,7 @@
   font-size:      11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  white-space:    nowrap;
   color:          var(--accent);
   border:         1px solid #c8f54240;
 }
@@ -100,6 +101,11 @@
 @media (max-width: 480px) {
   .hero {
     padding: 100px 20px 60px;
+  }
+
+  .badge {
+    font-size:      9px;
+    letter-spacing: 0.07em;
   }
 
   .tag {
