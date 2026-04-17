@@ -7,6 +7,7 @@ export function Manifesto() {
       <div className={styles.inner}>
         <AnimateOnScroll>
           <p className="section-label section-label--light">MANIFESTO</p>
+          <h2 className={styles.heading}>Como a Codify pensa software</h2>
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={100}>
