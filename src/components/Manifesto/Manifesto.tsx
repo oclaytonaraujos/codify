@@ -43,19 +43,19 @@ export function Manifesto() {
 
         <AnimateOnScroll delay={300}>
           <div className={styles.cta}>
-            <p className={styles.ctaText}>Parece que a gente pensa parecido?</p>
-            <p className={styles.ctaText}>
-              Então já é um bom começo.{' '}
-              <a 
-                href="https://wa.me/5564999890403?text=Ol%C3%A1%2C%20Codify!%20Achei%20interessante%20a%20forma%20como%20voc%C3%AAs%20pensam%20software."
-                className={styles.ctaLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Fale com a Codify pelo WhatsApp"
-              >
-                &rarr; Bora conversar
-              </a>
-            </p>
+            <div className={styles.ctaTextWrapper}>
+              <p className={styles.ctaText}>Parece que a gente pensa parecido?</p>
+              <p className={styles.ctaText}>Então já é um bom começo.</p>
+            </div>
+            <a 
+              href="https://wa.me/5564999890403?text=Ol%C3%A1%2C%20Codify!%20Achei%20interessante%20a%20forma%20como%20voc%C3%AAs%20pensam%20software."
+              className="btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Fale com a Codify pelo WhatsApp"
+            >
+              Bora conversar
+            </a>
           </div>
         </AnimateOnScroll>
       </div>
