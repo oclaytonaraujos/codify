@@ -6,6 +6,7 @@ import { Manifesto }      from './components/Manifesto/Manifesto'
 import { AboutStrip }     from './components/AboutStrip/AboutStrip'
 import { Portfolio }      from './components/Portfolio/Portfolio'
 import { Contact }        from './components/Contact/Contact'
+import { FAQ }            from './components/FAQ/FAQ'
 import { Footer }         from './components/Footer/Footer'
 import { WhatsAppButton } from './components/WhatsAppButton/WhatsAppButton'
 
@@ -19,6 +20,7 @@ export default function App() {
         <TechStrip />
         <Manifesto />
         <Portfolio />
+        <FAQ />
         <Contact />
         <AboutStrip />
       </main>

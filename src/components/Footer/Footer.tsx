@@ -6,7 +6,7 @@ export function Footer() {
       <div className={styles.inner}>
         <span className={styles.logo}>CODIFY</span>
         <span className={styles.copy}>
-          © 2026 Codify Inova Simples (I.S.) · CNPJ 65.739.441/0001-55
+          © 2026 Codify Software Studio. Todos os direitos reservados.
         </span>
         <span className={styles.address}>
           R. Abel Pereira de Castro, 574 · Setor Central · Rio Verde · GO
