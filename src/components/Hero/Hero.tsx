@@ -11,7 +11,7 @@ export function Hero() {
 
       <div className={styles.content}>
         <div className={styles.badge}>
-          Studio de Software · Rio Verde, GO · Desde 2026
+          Studio de Software · Rio Verde, GO · Desde 2025
         </div>
 
         <h1 className={styles.title}>

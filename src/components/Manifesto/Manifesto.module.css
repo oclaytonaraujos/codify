@@ -55,6 +55,54 @@
   color: var(--text);
 }
 
+.cta {
+  margin-top:    48px;
+  padding-top:   32px;
+  border-top:    1px dashed var(--border);
+}
+
+.ctaText {
+  font-size:     18px;
+  font-weight:   400;
+  font-style:    italic;
+  line-height:   1.6;
+  color:         var(--text);
+  margin-bottom: 8px;
+}
+
+.ctaLink {
+  color:           var(--accent);
+  text-decoration: none;
+  font-weight:     500;
+  font-style:      normal;
+  position:        relative;
+  transition:      opacity 0.2s ease;
+  display:         inline-block;
+  margin-left:     4px;
+}
+
+.ctaLink::after {
+  content:    '';
+  position:   absolute;
+  width:      100%;
+  transform:  scaleX(0);
+  height:     1px;
+  bottom:     0;
+  left:       0;
+  background: var(--accent);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.ctaLink:hover::after {
+  transform:  scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ctaLink:hover {
+  opacity: 0.9;
+}
+
 @media (max-width: 768px) {
   .manifesto {
     padding-top:    80px;
