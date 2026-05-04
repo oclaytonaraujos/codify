@@ -1,0 +1,236 @@
+/* =============================================================
+   CODIFY METHODOLOGY — Timeline Section
+   Estilo: minimalista, premium SaaS
+   Layout: vertical empilhada em mobile, lateral em md+
+============================================================= */
+
+.methodology {
+  max-width: 1200px;
+  margin:    0 auto;
+  padding:   120px 32px;
+}
+
+/* ─── Timeline container ─── */
+.timeline {
+  list-style:   none;
+  padding:      0;
+  margin:       0 0 80px 0;
+  position:     relative;
+}
+
+/* ─── Individual item ─── */
+.timelineItem {
+  position: relative;
+}
+
+.timelineItem + .timelineItem {
+  margin-top: 0;
+}
+
+.itemLayout {
+  display:  flex;
+  gap:      32px;
+  position: relative;
+}
+
+/* ─── Connector: dot + line ─── */
+.connector {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  flex-shrink:    0;
+  width:          48px;
+  position:       relative;
+}
+
+.dot {
+  width:           48px;
+  height:          48px;
+  border-radius:   50%;
+  background:      var(--surface);
+  border:          1px solid var(--border);
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  color:           var(--accent);
+  flex-shrink:     0;
+  position:        relative;
+  z-index:         2;
+  transition:      border-color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.line {
+  width:      1px;
+  flex:       1;
+  min-height: 100%;
+  background: var(--border);
+  position:   relative;
+  z-index:    1;
+}
+
+/* ─── Card ─── */
+.card {
+  flex:        1;
+  padding:     32px 36px;
+  background:  var(--bg);
+  border:      1px solid var(--border);
+  transition:  box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 0;
+  position:    relative;
+}
+
+.card::before {
+  content:    '';
+  position:   absolute;
+  inset:      0;
+  border:     1px solid transparent;
+  transition: border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover {
+  box-shadow:   0 4px 24px rgba(200, 245, 66, 0.06);
+  border-color: rgba(200, 245, 66, 0.25);
+  transform:    translateY(-2px);
+}
+
+.card:hover ~ .connector .dot,
+.itemLayout:hover .dot {
+  border-color: rgba(200, 245, 66, 0.5);
+  box-shadow:   0 0 16px rgba(200, 245, 66, 0.12);
+  background:   var(--surface2);
+}
+
+.stepNum {
+  display:        block;
+  margin-bottom:  16px;
+  font-family:    'DM Mono', monospace;
+  font-size:      11px;
+  letter-spacing: 0.1em;
+  color:          var(--accent);
+}
+
+.stepTitle {
+  margin-bottom:  8px;
+  font-family:    'Bebas Neue', sans-serif;
+  font-size:      clamp(22px, 3vw, 30px);
+  letter-spacing: 0.04em;
+  line-height:    1.1;
+  color:          var(--white);
+}
+
+.stepSubtitle {
+  margin-bottom:  16px;
+  font-family:    'DM Mono', monospace;
+  font-size:      12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color:          var(--text-muted);
+}
+
+.stepDesc {
+  font-size:   14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color:       var(--text-muted);
+}
+
+/* ─── CTA ─── */
+.ctaWrapper {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.ctaText {
+  margin-bottom:  28px;
+  font-family:    'DM Sans', sans-serif;
+  font-size:      clamp(16px, 2vw, 20px);
+  font-weight:    400;
+  color:          var(--text);
+  letter-spacing: 0.01em;
+}
+
+/* ─── Hover glow on timeline line ─── */
+.itemLayout:hover .line {
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 245, 66, 0.3),
+    var(--border) 70%
+  );
+}
+
+/* =============================================================
+   RESPONSIVO
+============================================================= */
+
+/* Desktop (md+): layout mais espaçado */
+@media (min-width: 769px) {
+  .itemLayout {
+    gap: 40px;
+  }
+
+  .card {
+    padding: 36px 44px;
+  }
+}
+
+/* Tablet / mobile */
+@media (max-width: 768px) {
+  .methodology {
+    padding-top:    80px;
+    padding-bottom: 80px;
+  }
+
+  .itemLayout {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 28px 24px;
+  }
+
+  .connector {
+    width: 40px;
+  }
+
+  .dot {
+    width:  40px;
+    height: 40px;
+  }
+
+  .dot svg {
+    width:  18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .methodology {
+    padding-top:    64px;
+    padding-bottom: 64px;
+    padding-left:   20px;
+    padding-right:  20px;
+  }
+
+  .itemLayout {
+    gap: 16px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+  .connector {
+    width: 36px;
+  }
+
+  .dot {
+    width:  36px;
+    height: 36px;
+  }
+
+  .dot svg {
+    width:  16px;
+    height: 16px;
+  }
+}
