@@ -63,6 +63,10 @@
     padding-bottom: 80px;
   }
 
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
   .card {
     padding: 36px 28px;
   }
