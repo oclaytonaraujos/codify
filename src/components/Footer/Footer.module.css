@@ -26,6 +26,13 @@
   color:          var(--text-muted);
 }
 
+.address {
+  font-family:    'DM Mono', monospace;
+  font-size:      11px;
+  letter-spacing: 0.06em;
+  color:          var(--text-muted);
+}
+
 .tag {
   margin-left: auto;
   font-size:   13px;

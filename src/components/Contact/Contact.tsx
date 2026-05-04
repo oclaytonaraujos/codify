@@ -1,5 +1,5 @@
 import { AnimateOnScroll } from '../AnimateOnScroll/AnimateOnScroll'
-import { IconEmail, IconPhone, IconLocation, IconInstagram } from './ContactIcons'
+import { IconEmail, IconPhone, IconLinkedin, IconInstagram } from './ContactIcons'
 import styles from './Contact.module.css'
 
 const CARDS = [
@@ -22,15 +22,10 @@ const CARDS = [
     href:  'mailto:contato@codify.dev.br',
   },
   {
-    icon:  <IconLocation />,
-    label: 'Endereço',
-    value: (
-      <>
-        R. Abel Pereira de Castro, 574<br />
-        Setor Central · Rio Verde · GO
-      </>
-    ),
-    href: undefined,
+    icon:  <IconLinkedin />,
+    label: 'LinkedIn',
+    value: 'codify-dev-br',
+    href:  'https://www.linkedin.com/in/codify-dev-br/',
   },
 ] as const
 
