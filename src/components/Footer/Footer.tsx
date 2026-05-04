@@ -8,10 +8,7 @@ export function Footer() {
         <span className={styles.copy}>
           © 2026 Codify Software Studio. Todos os direitos reservados.
         </span>
-        <span className={styles.address}>
-          R. Abel Pereira de Castro, 574 · Setor Central · Rio Verde · GO
-        </span>
-        <span className={styles.tag}>
+<span className={styles.tag}>
           Codify é onde ideias se tornam software.
         </span>
       </div>
