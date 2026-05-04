@@ -13,7 +13,7 @@ export function TechStrip() {
   const track = [...TECHS, ...TECHS, ...TECHS]
 
   return (
-    <div className={styles.strip} aria-label="Tecnologias">
+    <section className={styles.strip} aria-label="Tecnologias">
       <div className={styles.track}>
         {track.map((tech, i) => (
           <span key={i} className={styles.item}>
@@ -22,6 +22,6 @@ export function TechStrip() {
           </span>
         ))}
       </div>
-    </div>
+    </section>
   )
 }

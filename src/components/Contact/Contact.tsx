@@ -51,8 +51,17 @@ export function Contact() {
               </>
             )
 
+            const isWhatsApp = label === 'Telefone'
+
             return href ? (
-              <a key={label} href={href} className={styles.card}>
+              <a 
+                key={label} 
+                href={isWhatsApp ? 'https://wa.me/5564999890403?text=Olá,%20vim%20pelo%20site%20da%20Codify%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto' : href} 
+                className={styles.card}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={isWhatsApp ? 'Fale com a Codify pelo WhatsApp' : `Acessar nosso ${label}`}
+              >
                 {content}
               </a>
             ) : (

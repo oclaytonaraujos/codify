@@ -13,7 +13,7 @@ export function AboutStrip() {
   const track = [...ITEMS, ...ITEMS, ...ITEMS]
 
   return (
-    <div className={styles.strip} aria-label="Informações da empresa">
+    <aside className={styles.strip} aria-label="Informações da empresa">
       <div className={styles.track} aria-hidden="true">
         {track.map((item, index) => (
           <span key={index} className={styles.item}>
@@ -22,6 +22,6 @@ export function AboutStrip() {
           </span>
         ))}
       </div>
-    </div>
+    </aside>
   )
 }
