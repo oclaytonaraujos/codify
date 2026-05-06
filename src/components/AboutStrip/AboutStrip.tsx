@@ -3,7 +3,7 @@ import styles from './AboutStrip.module.css'
 const ITEMS = [
   'Empresa Simples de Inovação',
   'Rio Verde · Goiás',
-  'CNPJ Ativo desde Mar/2026',
+  'CNPJ Ativo desde Mar/2025',
   'SaaS · Sistemas · Automação',
   'contato@codify.dev.br',
 ]

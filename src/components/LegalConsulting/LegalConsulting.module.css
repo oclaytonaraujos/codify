@@ -1,0 +1,36 @@
+.titleWithSub {
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  margin-bottom:  60px;
+  font-size:      16px;
+  font-weight:    300;
+  line-height:    1.7;
+  color:          var(--text-muted);
+  max-width:      620px;
+}
+
+.cardLink {
+  display:        inline-block;
+  margin-top:     28px;
+  font-family:    'DM Mono', monospace;
+  font-size:      11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:          var(--text-muted);
+  border-bottom:  1px solid var(--border);
+  padding-bottom: 2px;
+  transition:     color 0.2s, border-color 0.2s;
+}
+
+.cardLink:hover {
+  color:        var(--text);
+  border-color: var(--text-muted);
+}
+
+.cardLink:focus-visible {
+  outline:        2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius:  1px;
+}

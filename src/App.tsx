@@ -1,6 +1,7 @@
 import { Nav }              from './components/Nav/Nav'
 import { Hero }             from './components/Hero/Hero'
 import { Services }         from './components/Services/Services'
+import { LegalConsulting }  from './components/LegalConsulting/LegalConsulting'
 import { TechStrip }        from './components/TechStrip/TechStrip'
 import { CodifyMethodology } from './components/CodifyMethodology/CodifyMethodology'
 import { Manifesto }        from './components/Manifesto/Manifesto'
@@ -18,6 +19,7 @@ export default function App() {
       <main>
         <Hero />
         <Services />
+        <LegalConsulting />
         <TechStrip />
         <CodifyMethodology />
         <Manifesto />
