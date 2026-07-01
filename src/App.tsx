@@ -9,6 +9,7 @@ import { AboutStrip }       from './components/AboutStrip/AboutStrip'
 import { Portfolio }        from './components/Portfolio/Portfolio'
 import { Contact }          from './components/Contact/Contact'
 import { FAQ }              from './components/FAQ/FAQ'
+import { InstagramWidget }  from './components/InstagramWidget/InstagramWidget'
 import { Footer }           from './components/Footer/Footer'
 import { WhatsAppButton }   from './components/WhatsAppButton/WhatsAppButton'
 
@@ -27,6 +28,7 @@ export default function App() {
         <Contact />
         <AboutStrip />
         <FAQ />
+        <InstagramWidget />
       </main>
       <Footer />
       <WhatsAppButton />

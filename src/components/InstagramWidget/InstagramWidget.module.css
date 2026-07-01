@@ -1,0 +1,33 @@
+.widgetSection {
+  max-width: 1200px;
+  margin:    0 auto;
+  padding:   0 32px 120px 32px;
+}
+
+.widgetContainer {
+  margin-top: 40px;
+  width:      100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .widgetSection {
+    padding-bottom: 80px;
+  }
+
+  .widgetContainer {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .widgetSection {
+    padding-bottom: 64px;
+    padding-left:   20px;
+    padding-right:  20px;
+  }
+  
+  .widgetContainer {
+    margin-top: 24px;
+  }
+}
