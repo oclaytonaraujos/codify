@@ -12,7 +12,7 @@ export function InstagramWidget() {
       </AnimateOnScroll>
       <div className={styles.widgetContainer}>
         <iframe
-          src="https://lightwidget.com/widgets/de88d16ca61157b1aa0a060329026fb8.html"
+          src="//lightwidget.com/widgets/de88d16ca61157b1aa0a060329026fb8.html"
           scrolling="no"
           allowTransparency={true}
           className="lightwidget-widget"
