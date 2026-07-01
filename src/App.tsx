@@ -26,9 +26,9 @@ export default function App() {
         <Manifesto />
         <Portfolio />
         <Contact />
+        <InstagramWidget />
         <AboutStrip />
         <FAQ />
-        <InstagramWidget />
       </main>
       <Footer />
       <WhatsAppButton />
