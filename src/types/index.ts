@@ -16,4 +16,6 @@ export interface Testimonial {
   quote: string
   name: string
   role: string
+  /** Marca depoimentos ilustrativos (não vêm de um cliente real) — precisa do selo "Exemplo ilustrativo" na UI. */
+  isExample?: boolean
 }

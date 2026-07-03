@@ -56,8 +56,14 @@ export function SocialProof() {
       <AnimateOnScroll className={styles.testimonials}>
         {testimonials.length > 0 ? (
           <div className={styles.testimonialGrid}>
-            {testimonials.map((item) => (
-              <blockquote key={item.name} className={styles.testimonialCard}>
+            {testimonials.map((item, index) => (
+              <blockquote
+                key={index}
+                className={`${styles.testimonialCard} ${item.isExample ? styles.exampleCard : ''}`}
+              >
+                {item.isExample && (
+                  <span className={styles.exampleBadge}>Exemplo ilustrativo</span>
+                )}
                 <p className={styles.testimonialQuote}>&ldquo;{item.quote}&rdquo;</p>
                 <footer className={styles.testimonialFooter}>
                   <span className={styles.testimonialName}>{item.name}</span>

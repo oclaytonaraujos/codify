@@ -76,6 +76,23 @@
   background: var(--surface);
 }
 
+.exampleCard {
+  background: var(--bg);
+  border:     1px dashed var(--border);
+}
+
+.exampleBadge {
+  display:        inline-block;
+  margin-bottom:  20px;
+  padding:        4px 10px;
+  font-family:    'DM Mono', monospace;
+  font-size:      10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color:          var(--accent);
+  border:         1px solid var(--accent);
+}
+
 .testimonialQuote {
   margin-bottom: 24px;
   font-size:     17px;
