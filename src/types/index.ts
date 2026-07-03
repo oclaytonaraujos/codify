@@ -11,3 +11,9 @@ export interface ContactCard {
   value: string
   href?: string
 }
+
+export interface Testimonial {
+  quote: string
+  name: string
+  role: string
+}

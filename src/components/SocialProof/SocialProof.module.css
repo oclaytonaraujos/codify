@@ -1,0 +1,153 @@
+.socialProof {
+  max-width: 1200px;
+  margin:    0 auto;
+  padding:   120px 32px;
+}
+
+.sub {
+  max-width:     560px;
+  margin-top:    -48px;
+  margin-bottom: 64px;
+  font-size:     16px;
+  font-weight:   300;
+  line-height:   1.7;
+  color:         var(--text-muted);
+}
+
+/* Grid: borda via gap + background no container */
+.badgeGrid {
+  display:               grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:                   1px;
+  background:            var(--border);
+  border:                1px solid var(--border);
+}
+
+.badgeCard {
+  display:        flex;
+  flex-direction: column;
+  gap:            8px;
+  padding:        40px 28px;
+  height:         100%;
+  background:     var(--bg);
+  transition:     background 0.2s;
+}
+
+.badgeCard:hover {
+  background: var(--surface);
+}
+
+.badgeIcon {
+  display:       block;
+  margin-bottom: 8px;
+  color:         var(--accent);
+}
+
+.badgeTitle {
+  font-family:    'Bebas Neue', sans-serif;
+  font-size:      20px;
+  letter-spacing: 0.03em;
+  color:          var(--white);
+}
+
+.badgeDesc {
+  font-size:   14px;
+  font-weight: 300;
+  line-height: 1.6;
+  color:       var(--text-muted);
+}
+
+/* Depoimentos */
+.testimonials {
+  margin-top: 1px;
+}
+
+.testimonialGrid {
+  display:               grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap:                   1px;
+  background:            var(--border);
+  border:                1px solid var(--border);
+  border-top:            none;
+}
+
+.testimonialCard {
+  padding:    40px;
+  background: var(--surface);
+}
+
+.testimonialQuote {
+  margin-bottom: 24px;
+  font-size:     17px;
+  font-weight:   300;
+  font-style:    italic;
+  line-height:   1.7;
+  color:         var(--text);
+}
+
+.testimonialFooter {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+}
+
+.testimonialName {
+  font-size:   14px;
+  font-weight: 500;
+  color:       var(--white);
+}
+
+.testimonialRole {
+  font-family:    'DM Mono', monospace;
+  font-size:      11px;
+  letter-spacing: 0.06em;
+  color:          var(--text-muted);
+}
+
+.comingSoon {
+  padding:        48px 40px;
+  background:     var(--surface);
+  border:         1px dashed var(--border);
+  text-align:     center;
+}
+
+.comingSoon p {
+  font-family:    'DM Mono', monospace;
+  font-size:      12px;
+  letter-spacing: 0.06em;
+  color:          var(--text-muted);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .socialProof {
+    padding-top:    80px;
+    padding-bottom: 80px;
+  }
+
+  .sub {
+    margin-top:    0;
+    margin-bottom: 40px;
+  }
+
+  .badgeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialProof {
+    padding-top:    64px;
+    padding-bottom: 64px;
+    padding-left:   20px;
+    padding-right:  20px;
+  }
+
+  .badgeGrid {
+    grid-template-columns: 1fr;
+  }
+}

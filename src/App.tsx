@@ -7,7 +7,9 @@ import { CodifyMethodology } from './components/CodifyMethodology/CodifyMethodol
 import { Manifesto }        from './components/Manifesto/Manifesto'
 import { AboutStrip }       from './components/AboutStrip/AboutStrip'
 import { Portfolio }        from './components/Portfolio/Portfolio'
+import { SocialProof }      from './components/SocialProof/SocialProof'
 import { Contact }          from './components/Contact/Contact'
+import { LeadForm }         from './components/LeadForm/LeadForm'
 import { FAQ }              from './components/FAQ/FAQ'
 import { InstagramWidget }  from './components/InstagramWidget/InstagramWidget'
 import { Footer }           from './components/Footer/Footer'
@@ -25,7 +27,9 @@ export default function App() {
         <CodifyMethodology />
         <Manifesto />
         <Portfolio />
+        <SocialProof />
         <Contact />
+        <LeadForm />
         <InstagramWidget />
         <AboutStrip />
         <FAQ />

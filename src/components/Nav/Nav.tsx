@@ -3,10 +3,11 @@ import { useScrolled } from '../../hooks/useScrolled'
 import styles from './Nav.module.css'
 
 const NAV_LINKS = [
-  { label: 'Serviços',   anchor: 'servicos' },
-  { label: 'Manifesto',  anchor: 'manifesto' },
-  { label: 'Portfólio',  anchor: 'portfolio' },
-  { label: 'Contato',    anchor: 'contato' },
+  { label: 'Serviços',    anchor: 'servicos' },
+  { label: 'Manifesto',   anchor: 'manifesto' },
+  { label: 'Portfólio',   anchor: 'portfolio' },
+  { label: 'Depoimentos', anchor: 'prova-social' },
+  { label: 'Contato',     anchor: 'contato' },
 ] as const
 
 export function Nav() {

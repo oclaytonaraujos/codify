@@ -1,0 +1,142 @@
+.leadForm {
+  max-width: 1200px;
+  margin:    0 auto;
+  padding:   120px 32px;
+}
+
+.sub {
+  margin-top:    -48px;
+  margin-bottom: 64px;
+  font-size:     16px;
+  font-weight:   300;
+  color:         var(--text-muted);
+}
+
+.form {
+  display:        flex;
+  flex-direction: column;
+  gap:            24px;
+  max-width:      760px;
+  padding:        48px;
+  background:     var(--surface);
+  border:         1px solid var(--border);
+}
+
+.row {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   24px;
+}
+
+.field {
+  display:        flex;
+  flex-direction: column;
+  gap:            8px;
+}
+
+.label {
+  font-family:    'DM Mono', monospace;
+  font-size:      11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:          var(--text-muted);
+}
+
+.optional {
+  text-transform: none;
+  letter-spacing: normal;
+  color:          var(--text-muted);
+  opacity:        0.7;
+}
+
+.input,
+.textarea {
+  width:       100%;
+  padding:     14px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size:   15px;
+  color:       var(--text);
+  background:  var(--bg);
+  border:      1px solid var(--border);
+  transition:  border-color 0.2s;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+  outline:      none;
+  border-color: var(--accent);
+}
+
+.input[aria-invalid='true'],
+.textarea[aria-invalid='true'] {
+  border-color: #e5484d;
+}
+
+select.input {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236b6b6b' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+}
+
+.error {
+  font-size: 12px;
+  color:     #e5484d;
+}
+
+.actions {
+  display:      flex;
+  align-items:  center;
+  gap:          20px;
+  margin-top:   8px;
+  flex-wrap:    wrap;
+}
+
+.submit {
+  border: none;
+}
+
+.success {
+  font-size: 13px;
+  color:     var(--accent);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .leadForm {
+    padding-top:    80px;
+    padding-bottom: 80px;
+  }
+
+  .sub {
+    margin-top:    0;
+    margin-bottom: 40px;
+  }
+
+  .form {
+    padding: 32px 24px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap:                   24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leadForm {
+    padding-top:    64px;
+    padding-bottom: 64px;
+    padding-left:   20px;
+    padding-right:  20px;
+  }
+
+  .form {
+    padding: 24px 20px;
+  }
+}
