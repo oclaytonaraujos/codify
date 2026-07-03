@@ -59,21 +59,20 @@
 
 /* Depoimentos */
 .testimonials {
-  margin-top: 1px;
+  margin-top: 56px;
 }
 
 .testimonialGrid {
   display:               grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap:                   1px;
-  background:            var(--border);
-  border:                1px solid var(--border);
-  border-top:            none;
+  gap:                   24px;
 }
 
 .testimonialCard {
-  padding:    40px;
-  background: var(--surface);
+  padding:       40px;
+  background:    var(--surface);
+  border:        1px solid var(--border);
+  border-radius: 12px;
 }
 
 .exampleCard {
@@ -125,6 +124,7 @@
   padding:        48px 40px;
   background:     var(--surface);
   border:         1px dashed var(--border);
+  border-radius:  12px;
   text-align:     center;
 }
 
@@ -149,6 +149,10 @@
 
   .badgeGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials {
+    margin-top: 40px;
   }
 
   .testimonialGrid {
